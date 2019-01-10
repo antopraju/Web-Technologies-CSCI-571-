@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:shrinkColumns="1"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:id="@+id/artistEvent"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="8dip"
+                android:text="Artist/Team(s)"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/artistValue"
+                android:autoLink="phone"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/venueEvent"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="8dip"
+                android:text="Venue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/venueValue"
+                android:autoLink="phone"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/timeEvent"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="8dip"
+                android:text="Time"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/timeValue"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/categoryEvent"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="8dip"
+                android:text="Category"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/categoryValue"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:padding="8dip" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/priceEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+            <TextView
+                android:padding="8dip"
+                android:text="Price Range"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/priceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:autoLink="web"
+                android:gravity="left"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/statusEvent"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="8dip"
+                android:text="Ticket Status"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/statusValue"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/buyTicketEvent"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="8dip"
+                android:text="Buy Ticket At"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/buyTicketValue"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:padding="8dip"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/seatmapEvent"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="8dip"
+                android:text="Seat Map"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/seatmapValue"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:padding="8dip" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

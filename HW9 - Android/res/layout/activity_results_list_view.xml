@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+            android:id="@id/relative_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PhotoFragment">
+
+        <TextView
+            android:id="@+id/artistHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:shrinkColumns="1"
+            android:stretchColumns="1"
+            android:id="@+id/spotifyTable">
+
+            <TableRow
+                android:id="@+id/nameSpotify"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:padding="8dip"
+                    android:text="Name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nameSpotifyValue"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="left"
+                    android:padding="8dip" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/followersSpotify"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:padding="8dip"
+                    android:text="Followers"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/followersSpotifyValue"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="left"
+                    android:padding="8dip" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/popularitySpotify"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:padding="8dip"
+                    android:text="Popularity"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/popularitySpotifyValue"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="left"
+                    android:padding="8dip" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/checkAtSpotify"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:padding="8dip"
+                    android:text="Check At"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/checkAtSpotifyValue"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="left"
+                    android:padding="8dip" />
+            </TableRow>
+        </TableLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/resultsListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/spotifyTable"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/noResultsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No Photos"
+            android:visibility="invisible" />
+
+        </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_one">
+
+        <TextView
+            android:id="@+id/artistHeading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:shrinkColumns="1"
+            android:stretchColumns="1"
+            android:id="@+id/spotifyTable2">
+
+            <TableRow
+                android:id="@+id/nameSpotify2"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:padding="8dip"
+                    android:text="Name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nameSpotifyValue2"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="left"
+                    android:padding="8dip" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/followersSpotify2"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:padding="8dip"
+                    android:text="Followers"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/followersSpotifyValue2"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="left"
+                    android:padding="8dip" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/popularitySpotify2"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:padding="8dip"
+                    android:text="Popularity"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/popularitySpotifyValue2"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="left"
+                    android:padding="8dip" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/checkAtSpotify2"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:padding="8dip"
+                    android:text="Check At"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/checkAtSpotifyValue2"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="left"
+                    android:padding="8dip" />
+            </TableRow>
+        </TableLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/resultsListRecyclerView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/spotifyTable2"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/noResultsTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No Photos"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>

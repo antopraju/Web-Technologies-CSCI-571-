@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Event Search</string>
+    <string name="search">Search</string>
+    <string name="favourites">Favourites</string>
+    <string name="no_favourite_available">No favourites</string>
+</resources>

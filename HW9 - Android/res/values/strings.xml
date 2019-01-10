@@ -1,0 +1,39 @@
+<resources>
+<string name="app_name">Places Search</string>
+<string name="search">Search</string>
+    <string name="title_activity_search_details">SearchDetailsActivity</string>
+    <string name="title_activity_display_place_search_results">Search results</string>
+
+    <string name="favourites">Favourites</string>
+    <string name="no_favourite_available">No Favourites</string>
+
+    <string-array name="categ_array">
+        <item>All</item>
+        <item>Music</item>
+        <item>Sports</item>
+        <item>Arts and Theatre</item>
+        <item>Film</item>
+        <item>Miscellaneous</item>
+    </string-array>
+
+    <string-array name="units_array">
+        <item>Miles</item>
+        <item>Kilometers</item>
+    </string-array>
+
+    <string name="empty_alert">No Records Found.</string>
+
+    <string-array name="Event_type">
+        <item>Default</item>
+        <item>Event Name</item>
+        <item>Time</item>
+        <item>Artist</item>
+        <item>Type</item>
+    </string-array>
+
+    <string-array name="filter_type">
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+
+</resources>

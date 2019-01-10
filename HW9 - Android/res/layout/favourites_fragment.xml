@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view_favourites"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+    <TextView
+        android:id="@+id/empty_fav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/no_favourite_available" />
+    <include layout="@layout/content_display_favourites" />
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:background="?android:attr/selectableItemBackground"-->
+<!--android:clickable="true"-->
+<!--android:focusable="true"-->
+<!--android:orientation="vertical"-->
+<!--android:paddingBottom="@dimen/row_padding_vertical"-->
+<!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+<!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+<!--android:paddingTop="@dimen/row_padding_vertical">-->
+
+<!--<ImageView-->
+    <!--android:id="@+id/favFragPlaceIcon"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:src="@mipmap/ic_launcher"-->
+    <!--/>-->
+<!--<TextView-->
+    <!--android:id="@+id/favFragTextViewName"-->
+    <!--android:text="Place title"-->
+    <!--android:layout_width="250dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:textSize="16dp"-->
+    <!--android:textStyle="bold"-->
+    <!--android:layout_toRightOf="@id/favFragPlaceIcon"-->
+    <!--android:layout_marginLeft="10dp"/>-->
+
+
+<!--<TextView-->
+    <!--android:id="@+id/favFragTextViewAddress"-->
+
+    <!--android:layout_width="250dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/placeTitle"-->
+    <!--android:layout_toRightOf="@id/favFragPlaceIcon"-->
+    <!--android:layout_marginLeft="10dp"/>-->
+
+<!--<ImageView-->
+    <!--android:id="@+id/favIcon"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_toRightOf="@id/favFragTextViewName"-->
+    <!--android:src="@drawable/red"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--/>-->
+
+
+
+<!--</RelativeLayout>-->
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--tools:context="com.example.vijethapv.myapplication.FavouritesFragment">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/favFragTextViewName"-->
+    <!--android:layout_width="250dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/favourites"-->
+    <!--android:textSize="40dp"-->
+    <!--android:textStyle="bold"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/favFragTextViewAddress"-->
+    <!--android:layout_below="@id/favFragTextViewName"-->
+    <!--android:layout_width="250dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="address"-->
+    <!--android:textSize="40dp"-->
+    <!--android:textStyle="bold"-->
+    <!--/>-->
+
+    <!--</RelativeLayout>-->

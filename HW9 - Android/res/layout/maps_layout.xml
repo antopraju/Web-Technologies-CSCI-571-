@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+ <!--   <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_below="@id/name"
+        android:layout_height="300dp"
+        tools:context="com.example.mapwithmarker.MapsMarkerActivity" /> -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mapTable"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:shrinkColumns="1"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:id="@+id/venueName"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="8dip"
+                android:text="Name"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/venueNameValue"
+                android:autoLink="phone"
+                android:layout_marginLeft="20dip"
+                android:textSize="15dp"
+                android:gravity="left"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/venueAddress"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="8dip"
+                android:text="Address"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/venueaddressValue"
+                android:autoLink="phone"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/venueCity"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="8dip"
+                android:text="City"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/venuecityValue"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:textSize="15dp"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/venuePhone"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="8dip"
+                android:text="Phone Number"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/venuephoneValue"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:textSize="15dp"
+                android:padding="8dip" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/venueOpenhours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+            <TextView
+                android:padding="8dip"
+                android:text="Open Hours"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/venueopenhoursValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:textSize="15dp"
+                android:autoLink="web"
+                android:gravity="left"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/venueGeneral"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="8dip"
+                android:text="General Rule"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/venuegeneralValue"
+                android:autoLink="web"
+                android:layout_marginLeft="20dip"
+                android:textSize="15dp"
+                android:gravity="left"
+                android:padding="8dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/venueChild"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="8dip"
+                android:text="Child Rule"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/venuechildValue"
+                android:autoLink="web"
+                android:layout_marginLeft="20dip"
+                android:textSize="15dp"
+                android:gravity="left"
+                android:padding="8dip"
+                android:paddingBottom="10dip"/>
+        </TableRow>
+    </TableLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_below="@id/mapTable"
+        android:layout_height="500dp"
+        tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+
+</RelativeLayout>
+</ScrollView>

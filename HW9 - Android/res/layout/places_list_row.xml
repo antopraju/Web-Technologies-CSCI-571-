@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/row_padding_vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="10dp"
+    android:paddingTop="@dimen/row_padding_vertical">
+
+    <ImageView
+        android:id="@+id/placeIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/placeTitle"
+        android:text="Place title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/placeIcon"
+        android:layout_marginLeft="12dp"/>
+
+
+    <TextView
+        android:id="@+id/placeAddress"
+        android:text="Place Address"
+        android:layout_width="250dp"
+        android:textSize="12dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placeTitle"
+        android:layout_toRightOf="@id/placeIcon"
+        android:layout_marginLeft="12dp"/>
+
+    <TextView
+        android:id="@+id/placeDate"
+        android:text="Place Date"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placeAddress"
+        android:layout_toRightOf="@id/placeIcon"
+        android:layout_marginLeft="12dp"/>
+
+    <TextView
+        android:id="@+id/placeTime"
+        android:text="Place Time"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placeAddress"
+        android:layout_toRightOf="@id/placeDate"
+        android:layout_marginLeft="12dp"/>
+
+    <ImageView
+        android:id="@+id/favIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/placeTitle"
+        android:src="@drawable/red"
+        android:layout_marginLeft="10dp"
+        />
+
+</RelativeLayout>

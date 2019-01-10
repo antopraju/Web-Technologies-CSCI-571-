@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_marginTop="10dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/FavplaceIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/FavplaceTitle"
+        android:text="Place title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/FavplaceIcon"
+        android:layout_marginLeft="12dp"/>
+
+
+    <TextView
+        android:id="@+id/FavplaceAddress"
+        android:text="Place Address"
+        android:layout_width="250dp"
+        android:textSize="12dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FavplaceTitle"
+        android:layout_toRightOf="@id/FavplaceIcon"
+        android:layout_marginLeft="12dp"/>
+
+    <TextView
+        android:id="@+id/FavplaceDate"
+        android:text="Place Date"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FavplaceAddress"
+        android:layout_toRightOf="@id/FavplaceIcon"
+        android:layout_marginLeft="12dp"/>
+
+    <TextView
+        android:id="@+id/FavplaceTime"
+        android:text="Place Time"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FavplaceAddress"
+        android:layout_toRightOf="@id/FavplaceDate"
+        android:layout_marginLeft="12dp"/>
+
+    <ImageView
+        android:id="@+id/FavfavIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/FavplaceTitle"
+        android:src="@drawable/red"
+        android:layout_marginLeft="10dp"
+        />
+
+</RelativeLayout>
