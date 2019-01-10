@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework-4</title>
+    <meta charset="utf-8">
+
+    <style type="text/css">
+            
+            .formClass{
+                text-align: center;
+                margin-top: 150px;
+            }
+
+            .urltext {
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            #urlbox{
+                width: 200px;
+            }
+
+            #submit{
+                width: 100px;
+            }
+    </style>
+</head>
+
+<body>
+    <div class = "formClass">
+        <p class = "urltext"> Enter URL for Container Shipping Companies List JSON File </p>
+        <form name = "myform" method = "POST" id = "location">
+          <input type = "text" id = "urlbox" name = "URL" maxlength = "255" size = "100" required>
+          <br><br>
+          <input type = "submit" name = "submit" id = "submit" onClick = "myFunction(this.form)"/>
+        </form>
+    </div>
+
+    <script>
+
+        var htmldata = "" 
+
+        function makehtml(jsonDoc){
+
+            var emptyJason = JSON.stringify(jsonDoc);
+            var isNotError = true;
+
+            if (emptyJason == JSON.stringify({})){  
+                throw "EmptyJasonError";
+            }else{
+
+                if(typeof(jsonDoc.Mainline.Table.Row) === 'undefined'){
+                    throw 'NoRowError';
+                }else{
+
+                        htmldata += "<html><head class='head'><meta charset=utf-8><title>Top Container Shipping Companies</title></head><body><center>";
+                        htmldata += "<table border = '3' width = 100%><tr>"; 
+
+                        var headerdata = jsonDoc.Mainline.Table.Header.Data; 
+                        var headerDataIterate = Object.keys(headerdata);    
+                        for(var i in headerDataIterate){
+                
+                            fileheaders = headerdata[i];
+                            htmldata += "<th>"+fileheaders+"</th>"
+                        }
+                        htmldata += "</tr>";
+                    }
+                }
+                          
+            var rowdata = jsonDoc.Mainline.Table.Row;
+            var rowLength = rowdata.length; 
+            
+            for(i = 0; i < rowLength; i++) {
+                
+                var individualRow = rowdata[i];
+                var keyList = Object.keys(individualRow);
+                htmldata += "<tr>";
+
+                for (var keyListCount in keyList){
+
+                    var j = keyListCount;
+                    datakey = keyList[j];
+
+                    if(datakey === "Logo"){
+                        if (individualRow[datakey]) {
+                            htmldata += "<td> <img src='"+ individualRow[datakey]+" 'height ='160' width='300' alt=' '> </td>";
+                        }else{
+                            htmldata += "<td> </td>";
+                        }
+                    }else if(datakey === "Hubs"){
+
+                    var hubs = individualRow[datakey];
+                    var hubKeyList = Object.keys(hubs);
+                    htmldata += "<td><ul>";
+
+                    for(var hubKeyCount in hubKeyList){
+
+                        var k = hubKeyCount;
+
+                        for(var hub_index in hubs[hubKeyList[k]]) {
+                            if (k === "0"){
+
+                                if(hub_index === "0"){
+                                    htmldata += "<li><b>" + hubs[hubKeyList[k]][hub_index] + "</b></li>";
+                                }else{
+                                htmldata += "<li>" + hubs[hubKeyList[k]][hub_index] + "</li>";
+                                }
+                            }
+                        }
+                    }
+
+                    htmldata += "</ul></td>";
+                        
+                    }else if(datakey === "HomePage"){
+                        htmldata += "<td><a href='" + individualRow[datakey] + "'/>"+ individualRow[datakey] + "</td>";
+                    }else{
+
+                        htmldata += "<td>" + individualRow[datakey] + "</td>";
+                    }
+                } 
+
+                htmldata += "</tr>";
+            }
+
+            htmldata += "</table></center><noscript></body></html>";
+
+            return isNotError;
+        }
+        
+        function myFunction(containerform){
+
+            try{
+                var URL = containerform.URL.value;
+                console.log(URL.trim().length);
+                if(URL.trim().length == 0)  
+                    throw 'EmptyUrlError';
+
+                else{
+
+                    function loadJSON(url){
+
+                        xmlhttp = new XMLHttpRequest();
+                        xmlhttp.open("GET", url, false);
+                        xmlhttp.send();
+                        if(xmlhttp.status == 0 || xmlhttp.status == 200){
+                            
+                            usefulResponse = xmlhttp.responseText;
+                            jsonDoc = JSON.parse(usefulResponse);
+                            return jsonDoc;
+                        }else{
+                            throw 'FileNotValidError';
+                        }
+                    }
+
+                    jsonDoc = loadJSON(URL);
+                    console.log("before the makehtml call");
+                    jsonDoc.onload = makehtml(jsonDoc);
+                    onloadjson = jsonDoc.onload;
+                    console.log("After the makehtml call");
+                    if (onloadjson){
+                       myWindow = window.open("", "Homework4", '_blank', "fullscreen = yes");
+                       myWindow.document.write(htmldata);     
+                    }
+                
+                    myWindow.document.close(); 
+                }
+            }catch (error){
+                console.log(error.name);
+                if(error.name == 'NetworkError'){
+                   window.alert('Please Check File Name');
+                }else if(error == 'EmptyUrlError'){
+                    window.alert('Please Enter File Name');
+                }else if(error == 'NoRowError'){ 
+                    window.alert("JSON File does not contain any Rows.");
+                }else if(error = 'EmptyJasonError'){
+                    window.alert("The JSON File is Empty!");
+                }else if(error = 'FileNotValidError'){
+                    window.alert("Entered file is not valid. Please try again.");
+                }
+                else{
+                   window.alert("Entered JSON file is not valid.")
+                }
+            }
+        }
+    </script>
+</body>
+</html>
