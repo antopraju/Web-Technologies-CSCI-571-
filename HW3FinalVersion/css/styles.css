@@ -1,0 +1,407 @@
+html{
+	width:100%;
+	margin:0 auto;
+}
+
+body{
+	max-width: 1000px;
+	margin:auto;
+	background: #555;
+}
+
+.topnav{
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1000px;
+    height: 100px;
+}
+
+.Menulink{
+    font-size: 30px;
+    cursor: pointer;
+    padding-left: 70px;
+}
+
+.topnav a{
+	color: black;
+	font-family:sans-serif;
+	border:none;
+	float:left;
+	text-decoration: none;
+	text-align: center;
+	font-size: 15px;
+	padding-top: 35px;
+	display:inline-block;
+}
+
+/* To Float the elements to the right */
+
+.links-right{
+	float:right;
+	padding-right: 50px;
+}
+
+.links-right a{
+	margin-right: 20px;
+	color:#BDBDBD;
+	font-size: 14px;
+}
+
+.links-right a:hover{
+	color:black;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.lawyer-img{
+    background-image: url("../images/lawyer.jpg");
+    height: 570px;
+    width: 1000px;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1100px 570px;
+    position: relative;
+}
+
+/* The styling for the form */
+
+.container{
+    float:left;
+    right: 0;
+    margin: 50px;
+    margin-left: 50px;
+    margin-top: 100px;
+    width: 310px;
+    height: 350px;
+    padding: 10px;
+    padding-bottom: 10px;
+    background-color: #0B3C5D;
+}
+
+input[type=text], input[type=password]{
+    width: 250px;
+    padding: 12px;
+    margin: 9px 0 22px 15px;
+    border: none;
+}
+
+input[type=text]:focus, input[type=email]:focus{
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Styling for the Email Placeholder */
+
+input::placeholder{
+	font-weight: 500;
+}
+
+.container h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+    font-size: 12px;
+    margin:0;
+    color: white;
+    padding:0;
+    margin-left:15px;
+}
+
+.container h2{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+    font-size: 30px;
+    margin:0;
+    color: white;
+    margin-left:15px;
+    padding:0;
+    line-height: 30px;
+}
+
+.container h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+    color:#FFEB3B;
+    margin-left:15px;
+    margin-top:9px;
+    margin-bottom: 10px;
+}
+
+.btn{
+	font-family: 'Montserrat', sans-serif;
+    background-color: #FCE022;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    font-size: 12px;
+    margin-left:15px;
+}
+
+/* Styling for the button when hovered*/
+
+.btn:hover{
+    background: #19283B;
+    color: white;
+}
+
+/* Styling of the features div */
+
+.features{
+    display: table;
+    width: 1000px;
+    table-layout: fixed; 
+    border-spacing: 18px; 
+    background-color: white;
+    padding-top: 80px;
+    padding-left: 30px;
+    padding-bottom: 60px;
+
+}
+
+.Amazingfeature{
+    display: table-cell;
+    background-color: white; 
+}
+
+.features h2{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	padding-bottom: 10px ;
+}
+
+.features h3{
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	margin:2px;
+}
+
+.ceo-statement{
+	width:1000px;
+	height: 300px;
+	margin:0;
+	text-align:center;
+	background-color: #F4F4F4;
+}
+
+.ceo-statement h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
+	font-weight: normal;
+	padding-top: 100px;
+	margin:0;
+	padding-bottom:0;
+}
+
+.ceo-name p{
+	font-family: sans-serif;
+	font-size: 12px;
+	padding-bottom: 100px;
+	margin:0;
+}
+
+
+.glasses{
+	background-image: url("../images/glasses.png");
+	box-shadow: inset 0 0 0 400px rgba(240, 240,  240, 0.80);
+	filter: grayscale(100%);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    width: 1000px;
+    height: 700px;
+    background-size: 1600px 1200px;
+    padding: 0;
+}
+
+.glasses h2{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 22px;
+	margin:0;
+	padding:0;
+	text-align: center;
+	color: black;
+	padding-top:50px;
+}
+
+.glasses h3{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size:15px;
+	margin:0;
+	padding:0;
+	text-align: center;
+	color: 	#A9A9A9;
+	margin-top:15px;
+}
+
+.plans h3{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	text-align: center;
+	margin:0;
+	padding:0;
+	padding-top:40px;
+	padding-bottom: 40px;
+	color:black;
+}
+
+.plans h4{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-weight: normal;
+	font-size: 15px;
+	margin:0;
+	padding:0;
+	padding-bottom: 15px;
+}
+
+.planbutton{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #073B5E;
+    border: none;
+    color: white;
+    padding: 15px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin:0;
+    cursor: pointer;
+    margin-left: 86px;
+    margin-top:25px;
+    margin-bottom: 50px;
+}
+
+.planbutton:hover{
+    background-color: #1F2635;
+}
+
+.plans h2{
+	font-family: Arial;
+	font-weight: 500;
+	text-align: center;
+	font-size: 25px;
+	margin:0;
+	padding:0;
+}
+
+.plans p{
+	font-family: Arial;
+	text-align: center;
+	font-weight: 500;
+	font-size: 25px;
+	margin:0;
+	padding:0;
+	padding-top:15px;
+}
+
+.plans{
+    display: table;
+    width: 1000px; 
+    table-layout: fixed; 
+    border-spacing: 20px;
+    padding-top: 75px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 75px;
+
+}
+.basicplan{
+    display: table-cell;
+    background-image:url(../images/grid.png);
+    box-shadow: inset 0 0 0 400px rgba(255, 255,  255, 0.85);
+    background-size: 400px 400px;
+    background-color: white; 
+}
+
+.notebook{
+	background-image: url("../images/notebook.jpg");
+	box-shadow: inset 0 0 0 250px rgba(36, 70, 105, 0.80);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin:0;
+	background-size: 1000px 620px;
+	width: 1000px;
+	height: 400px;
+	text-align: center;
+	padding:0;
+	border:none;
+}
+
+.notebook h3{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size:25px;
+	color:white;
+	margin:0;
+	padding:0;
+	padding-top:120px;
+}
+
+.notebook  h4{
+	font-family:sans-serif;
+	font-size:13px;
+	color: white;
+	margin:0;
+	padding:0;
+	padding-bottom: 15px;
+	padding-top: 8px;
+}
+
+.notebook .button{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #F2E12F;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.notebook .button:hover {
+    background: #19283B;
+    color: white;
+}
+
+/* Styling of the footer */
+
+footer{
+	background-color: #1E2430;
+	text-align: center;
+	width:1000px;
+}
+
+footer h3{
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size:20px;
+	padding-top:60px;
+	padding-bottom:5px;
+	margin:0;
+}
+
+footer p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+	color: #D3D3D3;
+	padding-top:0px;
+	padding-bottom: 10px;
+	margin-top:0px;
+}
+
+footer a{
+	margin: 23px;
+}
