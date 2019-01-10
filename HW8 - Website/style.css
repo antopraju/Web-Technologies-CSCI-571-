@@ -1,0 +1,271 @@
+
+/* Body Styling */
+
+*, body, html {
+	margin: 0;
+	padding: 0;	
+}
+
+/* Form styling */
+
+.formStyle{
+
+	width: 70%;
+	margin: auto;
+	background-color: #F8F8F8;
+	margin-top: 35px;
+}
+
+.formHeading{
+
+	padding-bottom: 8px;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 17px;
+}
+
+form{
+	width: 70%;
+	margin: auto;
+
+	padding-bottom: 20px;
+}
+
+/* Stlying for the Form Validation */
+
+#inputValidationLocation{
+	font-size: 14px;
+}
+
+#inputValidationKeyword{
+	font-size: 14px;
+}
+
+
+input.ng-invalid.ng-touched {
+  border: 2px solid red;
+}
+
+
+.required-field::after {
+
+    content: "*";
+    color: red;
+}
+
+.resultsButton{
+
+	width: 70%;
+	margin: auto;
+	margin-top: 35px;
+}
+
+#resultsOfSearch{
+
+	width: 70%;
+	margin: auto;
+	margin-top: 15px;
+}
+
+#resultsOfFavoriteSearch{
+
+	width: 70%;
+	margin: auto;
+	margin-top: 15px;
+}
+
+.getDetailsButton{
+
+	margin-top: 10px;
+	margin-bottom: 10px; 
+	text-align: right;
+}
+
+#errorDiv{
+
+	width: 70%;
+	margin: auto;
+	margin-top: 40px;
+}
+
+/* Tooltip Styling */
+
+.tooltip-inner{
+
+      background-color: #6B6C6F; 
+      width: 250px;
+      color: white; 
+      padding: 4px;
+      font-size: 12px;
+      text-align: left;
+  }
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,.bs-tooltip-bottom .arrow::before{ 
+	border-bottom: none !important; 
+}
+
+.bs-tooltip-auto[x-placement^=top] .arrow::before,.bs-tooltip-top .arrow::before{
+	border-top: none !important; 
+}
+
+.eventDetailsPage{
+	margin: auto;
+	width: 70%;
+}
+
+#eventNameHeading{
+	font-size: 18px;
+	padding-top: 15px;
+}
+
+/* Artist Tab Styling */
+
+.photo-tile{
+
+	margin-right: 5px;
+	margin-bottom: 10px;
+	border: 1px solid lightgrey;
+	width: 100%;
+}
+
+.photo-tile img{
+
+	max-width: 95%;
+	min-width: 95%;
+	margin: auto;
+	padding: 5px;
+}
+
+.photos-tab-content{
+
+	margin-top: 10px;
+	overflow: auto;
+	
+	padding: 5px;
+}
+
+.photoGrid{
+
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+
+    padding: 0 4px;
+}
+
+.grid-row{
+
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    padding: 0 4px;
+}
+
+.photoGrid {
+
+    flex: 33%;
+    max-width: 33%;
+    /* For three images in a row */
+    padding: 0 4px;
+}
+
+@media screen and (max-width: 600px) {
+    .photoGrid{
+
+    	max-width: 100%;
+        flex: 100%;
+        
+    } 
+}
+
+/* End of Artist Tab Styling */
+
+.selected {
+    background-color: #F9E0A7;
+    color: black;
+}
+
+#venueNameHeading{
+	font-size: 18px;
+	padding-top: 15px;
+}
+
+.venueResultsTableBody{
+
+	font-size: 14px;
+}
+
+#venueMap{
+
+	margin: 0;
+	height: 400px;
+}
+
+.eventInfoTable{
+
+	padding-top: 12px;
+	padding-bottom: 25px;
+}
+
+/* Upcoming Tab Styling */
+
+.optionContainers{
+
+	padding-top: 18px;
+}
+
+#upcomingEventsCards{
+	padding-top: 15px;
+}
+
+.cardDivs{
+	margin-top: 10px;
+}
+
+/* Display Controlling */
+#progressBarDiv{
+
+	width: 70%;
+	margin: auto;
+	margin-top: 35px;
+	display: none;
+
+}	
+
+#resultsOfSearch{
+
+	display: none;
+}
+
+#resultsOfFavoriteSearch{
+
+	display: none;
+}
+
+.eventDetailsPage{
+
+	display: none;
+}
+
+#errorDiv{
+
+	display: none;
+}
+
+.cardDivs a{
+	text-decoration: none;
+}
+
+.cardDivs a:hover{
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    .photoGrid {
+        flex: 50%;
+        max-width: 50%;
+    }
+}

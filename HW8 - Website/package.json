@@ -1,0 +1,21 @@
+{
+  "name": "nw8",
+  "version": "1.0.0",
+  "description": "HomeWork 8",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "material-design-icons": "^3.0.1",
+    "ngeohash": "^0.6.0",
+    "package-lock.json": "^1.0.0",
+    "request": "^2.88.0",
+    "spotify-web-api-node": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Anthony Prajwal P",
+  "license": "ISC"
+}
